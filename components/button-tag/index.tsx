@@ -5,8 +5,8 @@ export function ButtonTag ({title, active, onPress}) {
     return (
         <TouchableOpacity
         onPress={onPress} 
-        style={{paddingHorizontal: 12,
-            paddingVertical: 4, backgroundColor: active  ? COLORS.green : COLORS.gray, alignSelf: 'center', borderRadius: 12
+        style={{paddingHorizontal: 16,
+            paddingVertical: 4, backgroundColor: active  ? COLORS.green : COLORS.gray, alignSelf: 'center', borderRadius: 20
         }}>
             <Text style={{color: active ? 'black' : 'white',}}>
                 {title}
