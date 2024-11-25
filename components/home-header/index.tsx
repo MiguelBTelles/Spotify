@@ -14,7 +14,7 @@ export function HomeHeader({ children }: any) {
             style={{
                 paddingHorizontal: 12, 
             }}>
-                <Avatar title={'M'} />
+                <Avatar title={'M'} size={35}/>
                 <ButtonTag onPress={() => setBtnActive('all')} active={btnActive==='all'} title={'All'}/>
                 <ButtonTag onPress={() => setBtnActive('music')} active={btnActive==='music'} title={'Music'}/>
                 <ButtonTag onPress={() => setBtnActive('podcast')} active={btnActive==='podcast'} title={'Podcasts'}/>

@@ -2,23 +2,23 @@ import { COLORS } from "@/constants/constants";
 import React from "react";
 import { View, Text } from "react-native";
 
-export function Avatar({title}) {
+export function Avatar({title, size}) {
     return (
         <View
         style={{
             backgroundColor: COLORS.blue,
-            width: 60,
-            height: 60,
+            width: size,
+            height: size,
             alignItems: 'center',
             justifyContent: 'center',
-            borderRadius: 30
+            borderRadius: size / 2
         }}
     >
         <Text
             style={{
                 textAlign: 'center',
-                fontSize: 24,
-                color: 'white'
+                fontSize: 20,
+                color: 'black'
             }}>
             {title}
         </Text>

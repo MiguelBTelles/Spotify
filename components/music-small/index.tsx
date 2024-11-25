@@ -15,7 +15,7 @@ export function MusicSmall({title, image}: any) {
             />  
             <View style={{flex: 1}}>
 
-                <Text style={{color:'white', flexWrap: 'wrap', }} ellipsizeMode="tail" numberOfLines={2}>
+                <Text style={{color:'white', flexWrap: 'wrap', fontWeight: 'bold' }} ellipsizeMode="tail" numberOfLines={2}>
                     {title}
                 </Text>
             </View>
