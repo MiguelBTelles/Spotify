@@ -23,9 +23,17 @@ export default function HomeScreen() {
             <MusicSmall title={'Travis Scott'} image={'https://images.unsplash.com/photo-1522673999312-93aa76caeda6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGFsYnVtJTIwbXVzaWN8ZW58MHx8MHx8fDA%3D'} />
           </View>
           <View style={{ flex: 1, gap: 8, flexDirection: 'row' }}>
-            <MusicSmall title={'Eminem'} image={'https://images.unsplash.com/photo-1619983081563-430f63602796?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWxidW0lMjBtdXNpY3xlbnwwfHwwfHx8MA%3D%3D'} />
-            <MusicSmall title={'Filipe Ret'} image={'https://plus.unsplash.com/premium_photo-1683115179970-2422d172e36d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YWxidW0lMjBtdXNpY3xlbnwwfHwwfHx8MA%3D%3D'} />
+            <MusicSmall title={'Eminem'} image={'https://plus.unsplash.com/premium_photo-1731287011777-b3fdfb104dcd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzMTR8fHxlbnwwfHx8fHw%3D'} />
+            <MusicSmall title={'Filipe Ret'} image={'https://images.unsplash.com/photo-1731243769111-90fec6f9c7f3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0NTZ8fHxlbnwwfHx8fHw%3D'} />
           </View>
+        </View>
+        <View style={{ gap: 20, marginTop: 12 }}>
+          <Text style={{ color: 'white', fontSize: 20, fontWeight: 'bold' }}>Sugestões de álbuns para você</Text>
+          <ScrollView horizontal={true} contentContainerStyle={{ gap: 20, }} showsHorizontalScrollIndicator={false}>
+            <MusicMedium title={'Acrônico'} artist={'Jean Tassy, luri Rio Branco'} image={'https://images.unsplash.com/photo-1732147145548-0c245396a268?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMzd8fHxlbnwwfHx8fHw%3D'} />
+            <MusicMedium title={'GNX'} artist={'Kendrick Lamar'} image={'https://images.unsplash.com/photo-1732439857681-ece7fe1ff7eb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8'} />
+            <MusicMedium title={'Propósito'} artist={'Trak'} image={'https://images.unsplash.com/photo-1732444827571-3b16b9a837e4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8'} />
+          </ScrollView>
         </View>
         <View style={{ gap: 20, marginTop: 12 }}>
           <Text style={{ color: 'white', fontSize: 20, fontWeight: 'bold' }}>Recomendações para hoje</Text>
@@ -48,6 +56,46 @@ export default function HomeScreen() {
             <MusicCompact title={'30PRAUM'} playlistCreator={'30PRAUM'} image={"https://images.unsplash.com/photo-1732203363655-dda8834440ef?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5OHx8fGVufDB8fHx8fA%3D%3D"} />
             <MusicCompact title={'Boombap'} playlistCreator={'BTelles'} image={"https://images.unsplash.com/photo-1664566484452-03b6f3817fdc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMjN8fHxlbnwwfHx8fHw%3D"} />
             <MusicCompact title={'Coisas de cinema'} playlistCreator={'Lezin'} image={"https://plus.unsplash.com/premium_photo-1728904064102-7068efe855f3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMzV8fHxlbnwwfHx8fHw%3D"} />
+          </ScrollView>
+        </View>
+        <View style={{ gap: 20, marginTop: 12 }}>
+          <Text style={{ color: 'white', fontSize: 20, fontWeight: 'bold' }}>Suas músicas estão com saudade</Text>
+          <ScrollView horizontal={true} contentContainerStyle={{ gap: 20, }} showsHorizontalScrollIndicator={false}>
+            <MusicMedium title={'Coisas de cinema'} artist={'naris, Lezin, Theuzz011'} image={'https://images.unsplash.com/photo-1732444827571-3b16b9a837e4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8'} />
+            <MusicMedium title={'Boombap Brasil'} artist={'Clássicas do boombap nacional'} image={'https://images.unsplash.com/photo-1732296885178-6ee6aa71c01c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3MHx8fGVufDB8fHx8fA%3D%3D'} />
+            <MusicMedium title={'Garoto Oceano'} artist={'Caio Ocean'} image={'https://images.unsplash.com/photo-1732229654147-3562920a8e3f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3NHx8fGVufDB8fHx8fA%3D%3D'} />
+          </ScrollView>
+        </View>
+        <View style={{ gap: 20, marginTop: 12 }}>
+          <Text style={{ color: 'white', fontSize: 20, fontWeight: 'bold' }}>Álbuns com as músicas que você adora</Text>
+          <ScrollView horizontal={true} contentContainerStyle={{ gap: 20, }} showsHorizontalScrollIndicator={false}>
+            <MusicMedium title={'Mistérios'} artist={'KayBlack'} image={'https://plus.unsplash.com/premium_photo-1730828574006-6cc51c904b31?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3N3x8fGVufDB8fHx8fA%3D%3D'} />
+            <MusicMedium title={'Coisas que eu já devia ter dito há um tempo'} artist={'Mc Kako'} image={'https://images.unsplash.com/photo-1732219516085-1de5f41d0e94?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5Nnx8fGVufDB8fHx8fA%3D%3D'} />
+            <MusicMedium title={'Contradições'} artist={'KayBlack'} image={'https://plus.unsplash.com/premium_photo-1727539364539-c382852a87c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMzB8fHxlbnwwfHx8fHw%3D'} />
+          </ScrollView>
+        </View>
+        <View style={{ gap: 20, marginTop: 12 }}>
+          <Text style={{ color: 'white', fontSize: 20, fontWeight: 'bold' }}>Novos lançamentos para você</Text>
+          <ScrollView horizontal={true} contentContainerStyle={{ gap: 20, }} showsHorizontalScrollIndicator={false}>
+            <MusicMedium title={'A Verdade Machuca'} artist={'Tz da Coronel'} image={'https://images.unsplash.com/photo-1731688687605-e1e7aa7fb42c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMzN8fHxlbnwwfHx8fHw%3D'} />
+            <MusicMedium title={'Bem vindo ao meu Mundo'} artist={'MC PH'} image={'https://images.unsplash.com/photo-1731332066050-47efac6e884f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyMDh8fHxlbnwwfHx8fHw%3D'} />
+            <MusicMedium title={'Pálido ponto Azul'} artist={'Kant'} image={'https://images.unsplash.com/photo-1731462385471-90cf5aa51848?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNDl8fHxlbnwwfHx8fHw%3D'} />
+          </ScrollView>
+        </View>
+        <View style={{ gap: 20, marginTop: 12 }}>
+          <Text style={{ color: 'white', fontSize: 20, fontWeight: 'bold' }}>Para acompanhar sua noite</Text>
+          <ScrollView horizontal={true} contentContainerStyle={{ gap: 20, }} showsHorizontalScrollIndicator={false}>
+            <MusicMedium artist={'Ferrugem, Péricles, Belo,  Kamisa 10, Mumuzinho'} image={'https://plus.unsplash.com/premium_photo-1712956443676-76a1e230c898?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzMTB8fHxlbnwwfHx8fHw%3D'} />
+            <MusicMedium artist={'Legião Urbana, Engenheiros do Hawaii'} image={'https://plus.unsplash.com/premium_photo-1731287011777-b3fdfb104dcd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzMTR8fHxlbnwwfHx8fHw%3D'} />
+            <MusicMedium artist={'MC LUUKY, Natanzinho Lima, NATTAN, Wesley Safadão'} image={'https://images.unsplash.com/photo-1729691692870-a957012d616a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0MjJ8fHxlbnwwfHx8fHw%3D'} />
+          </ScrollView>
+        </View>
+        <View style={{ gap: 20, marginTop: 12 }}>
+          <Text style={{ color: 'white', fontSize: 20, fontWeight: 'bold' }}>Estações recomendadas</Text>
+          <ScrollView horizontal={true} contentContainerStyle={{ gap: 20, }} showsHorizontalScrollIndicator={false}>
+            <MusicMedium artist={'Derxan, Caio Ocean, Gyylo, 2ZDinniz'} image={'https://images.unsplash.com/photo-1730304538482-5fa524c79411?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0NDR8fHxlbnwwfHx8fHw%3D'} />
+            <MusicMedium artist={'Pinepple StormTv, Rock Danger, LEALL, Derxan'} image={'https://images.unsplash.com/photo-1731243769111-90fec6f9c7f3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0NTZ8fHxlbnwwfHx8fHw%3D'} />
+            <MusicMedium artist={'Rock Danger, Derxan, TOKIODK, Big Bllakk'} image={'https://images.unsplash.com/photo-1730292423126-077dd3750a46?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0NzR8fHxlbnwwfHx8fHw%3D'} />
           </ScrollView>
         </View>
       </Content>
