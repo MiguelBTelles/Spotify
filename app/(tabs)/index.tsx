@@ -7,6 +7,7 @@ import { MusicMedium } from '@/components/music-medium';
 import { ScrollView } from 'react-native';
 import { MusicCompact } from '@/components/music-compact';
 import { COLORS } from '@/constants/constants';
+import { MusicLarge } from '@/components/music-large';
 
 export default function HomeScreen() {
   return (
@@ -98,6 +99,10 @@ export default function HomeScreen() {
             <MusicMedium artist={'Rock Danger, Derxan, TOKIODK, Big Bllakk'} image={'https://images.unsplash.com/photo-1730292423126-077dd3750a46?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0NzR8fHxlbnwwfHx8fHw%3D'} />
           </ScrollView>
         </View>
+        <View>
+          <MusicLarge image={'https://images.unsplash.com/photo-1730833545520-2e8cc0f52af3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0NTF8fHxlbnwwfHx8fHw%3D'}  imageBackground={'https://images.unsplash.com/photo-1730387761544-8b5ec3bfca5d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0NDd8fHxlbnwwfHx8fHw%3D'}/>
+        </View>
+        
       </Content>
     </Container>
   );
