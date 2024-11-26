@@ -2,7 +2,7 @@ import React from "react";
 import { View, Image, Text } from 'react-native';
 import { COLORS } from "@/constants/constants";
 
-export function MusicCompact({ title, image, playlistCreator }) {
+export function MusicCompact({ title, image, playlistCreator }: any) {
     return (
         <View style={{width: 100, marginTop: 20 }}>
         <Image
@@ -13,7 +13,7 @@ export function MusicCompact({ title, image, playlistCreator }) {
             <Text style={{ color: 'white', fontWeight: 'bold' }} numberOfLines={1}>
                 {title}
             </Text>
-            <Text style={{ color: COLORS.lightGray, fontWeight: 'Nunito' }} numberOfLines={1}>
+            <Text style={{ color: COLORS.lightGray,}} numberOfLines={1}>
                 Playlist • {playlistCreator}
             </Text>
         </View>

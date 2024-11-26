@@ -100,7 +100,7 @@ export default function HomeScreen() {
           </ScrollView>
         </View>
         <View>
-          <MusicLarge image={'https://images.unsplash.com/photo-1730833545520-2e8cc0f52af3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0NTF8fHxlbnwwfHx8fHw%3D'}  imageBackground={'https://images.unsplash.com/photo-1730387761544-8b5ec3bfca5d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0NDd8fHxlbnwwfHx8fHw%3D'}/>
+          <MusicLarge title={'Rádio de Lezin'} artist={'Kaio Viana, Cryzin, neris, Lezin, Dj Leopoldo'} typeOfMusic={'playlist'} typeOfMusicCreator={'spotify'} image={'https://images.unsplash.com/photo-1510525009512-ad7fc13eefab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJvYXR8ZW58MHx8MHx8fDA%3D'}  imageBackground={'https://images.unsplash.com/photo-1732482124606-697008dab09c?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'}/>
         </View>
         
       </Content>

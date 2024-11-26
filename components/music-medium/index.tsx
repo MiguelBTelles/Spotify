@@ -14,7 +14,7 @@ export function MusicMedium({ title, image, artist }: any) {
                     <Text style={{ color: 'white', fontWeight: 'bold' }} numberOfLines={1}>
                         {title}
                     </Text>
-                    <Text style={{ color: COLORS.lightGray, fontWeight: 'Nunito' }} numberOfLines={2}>
+                    <Text style={{ color: COLORS.lightGray,}} numberOfLines={2}>
                      {artist}
                     </Text>
                 </View>
