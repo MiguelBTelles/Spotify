@@ -10,10 +10,7 @@ export function HomeHeader({ children }: any) {
             <ScrollView 
             showsHorizontalScrollIndicator={false}
             horizontal={true}
-            contentContainerStyle={{alignSelf: 'center',  gap:12,}}
-            style={{
-                paddingHorizontal: 12, 
-            }}>
+            contentContainerStyle={{alignSelf: 'center',  gap:12,}}>
                 <Avatar title={'M'} size={35}/>
                 <ButtonTag onPress={() => setBtnActive('all')} active={btnActive==='all'} title={'All'}/>
                 <ButtonTag onPress={() => setBtnActive('music')} active={btnActive==='music'} title={'Music'}/>
