@@ -8,7 +8,7 @@ import { COLORS } from "@/constants/constants";
 
 export function MusicLarge({ Animated, imageBackground, image, title, artist, typeOfMusic, typeOfMusicCreator }: any) {
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: 'black', marginTop: 40 }}>
+    <TouchableOpacity style={{ flex: 1, justifyContent: "center", alignItems: "center", marginTop: 40 }}>
       <ImageBackground
         style={{
           width: 380,
@@ -85,6 +85,6 @@ export function MusicLarge({ Animated, imageBackground, image, title, artist, ty
 
         </View>
       </ImageBackground>
-    </View>
+    </TouchableOpacity>
   );
 }

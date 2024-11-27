@@ -1,10 +1,10 @@
 import { COLORS } from "@/constants/constants";
 import React from "react";
-import { View, Image, Text } from "react-native";
+import { View, Image, Text, TouchableOpacity } from "react-native";
 
 export function MusicSmall({title, image}: any) {
     return(
-        <View style={{  
+        <TouchableOpacity style={{  
             gap:12, flex: 1, backgroundColor: COLORS.gray, 
             borderRadius: 8, flexDirection: 'row', alignItems: 'center', 
             
@@ -19,6 +19,6 @@ export function MusicSmall({title, image}: any) {
                     {title}
                 </Text>
             </View>
-        </View>
+        </TouchableOpacity>
     )
 }
