@@ -11,7 +11,7 @@ export function SearchHeader() {
 
     return (
         <Header>
-            <View style={{ alignItems: 'center', flexDirection: 'row', gap: 18, marginBottom: 20 }}>
+            <View style={{ alignItems: 'center', flexDirection: 'row', gap: 18, marginBottom: 20,}}>
                 <Avatar title="M" size={35} />
                 <Text style={{ color: 'white', fontSize: 28, fontWeight: 'bold', marginRight: 170 }}>
                     Buscar
@@ -20,7 +20,7 @@ export function SearchHeader() {
                     <Feather name="camera" size={26} color="white" />
                 </TouchableOpacity>
             </View>
-            <View style={{justifyContent: 'center', alignItems: 'center', marginTop: 40, }}>
+            <View style={{justifyContent: 'center', alignItems: 'center', marginTop: 40, marginBottom: 10}}>
                 <View style={{
                     flexDirection: 'row',
                     alignItems: 'center',
@@ -41,7 +41,8 @@ export function SearchHeader() {
                         onChangeText={setMusic}
                         style={{
                             height: '100%',
-                            fontSize: 16
+                            fontSize: 16,
+                            fontWeight: 800
                         }}
                     />
                 </View>
