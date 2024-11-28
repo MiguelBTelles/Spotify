@@ -2,7 +2,7 @@ import { COLORS } from "@/constants/constants";
 import React from "react";
 import { View, Text } from "react-native";
 
-export function Avatar({title, size}) {
+export function Avatar({title, size}: any) {
     return (
         <View
         style={{
