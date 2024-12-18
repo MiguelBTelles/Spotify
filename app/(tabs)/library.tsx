@@ -57,7 +57,7 @@ export default function Library() {
         <View style={{
           marginTop: 20,
           marginHorizontal: 10,
-          gap: 16
+          gap: 16,
         }}>
           <SquareFile title={'miguelbt'} fileType={'Playlist'} artist={'BTelles'} image={'https://images.unsplash.com/photo-1731223833744-7904a1bbeb6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzNHx8fGVufDB8fHx8fA%3D%3D'}/>
           <SquareFile title={'BT'} fileType={'Playlist'} artist={'BTelles'} image={'https://images.unsplash.com/photo-1727258720973-fefc6360944d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzNnx8fGVufDB8fHx8fA%3D%3D'}/>

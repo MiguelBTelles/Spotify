@@ -8,8 +8,12 @@ import { ScrollView } from 'react-native';
 import { MusicCompact } from '@/components/music-compact';
 import { COLORS } from '@/constants/constants';
 import { MusicLarge } from '@/components/music-large';
+import { useRouter } from 'expo-router';
 
 export default function HomeScreen() {
+
+  const router = useRouter();
+
   return (
     <Container>
       <HomeHeader />
@@ -31,7 +35,9 @@ export default function HomeScreen() {
         <View style={{ gap: 20, marginTop: 12 }}>
           <Text style={{ color: 'white', fontSize: 20, fontWeight: 'bold' }}>Sugestões de álbuns para você</Text>
           <ScrollView horizontal={true} contentContainerStyle={{ gap: 20, }} showsHorizontalScrollIndicator={false}>
-            <MusicMedium title={'Acrônico'} artist={'Jean Tassy, luri Rio Branco'} image={'https://images.unsplash.com/photo-1732147145548-0c245396a268?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMzd8fHxlbnwwfHx8fHw%3D'} />
+            <MusicMedium title={'Acrônico'} artist={'Jean Tassy, luri Rio Branco'} onPress={
+              ()=>  {router.push('/music-group-screen')}
+            } image={'https://images.unsplash.com/photo-1732147145548-0c245396a268?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMzd8fHxlbnwwfHx8fHw%3D'} />
             <MusicMedium title={'GNX'} artist={'Kendrick Lamar'} image={'https://images.unsplash.com/photo-1732439857681-ece7fe1ff7eb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8'} />
             <MusicMedium title={'Propósito'} artist={'Trak'} image={'https://images.unsplash.com/photo-1732444827571-3b16b9a837e4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8'} />
           </ScrollView>
