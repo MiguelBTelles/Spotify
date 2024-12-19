@@ -35,6 +35,7 @@ export default function RootLayout() {
         <Stack.Screen name="(tabs)" options={{ headerShown: false, contentStyle: { backgroundColor: 'black' } }} />
         <Stack.Screen name="+not-found" />
         <Stack.Screen name="music-group-screen" options={{ headerShown: false }} />
+        <Stack.Screen name="artist-perfil" options={{ headerShown: false }} />
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>

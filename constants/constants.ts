@@ -6,4 +6,5 @@ export const COLORS = {
     red: 'red',
     placeholder: '#4D4D4D',
     backgroundScreen: "#121212"
+    
 }

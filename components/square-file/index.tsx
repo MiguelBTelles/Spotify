@@ -19,8 +19,8 @@ export function  SquareFile({image, title, fileType, artist, numberOfMusics,}: a
             <View>
                 <Text style={{
                     color: 'white',
-                    fontSize: 18,
-                    fontWeight: 400
+                    fontSize: 16,
+                    fontWeight: 700
                 }}>
                     {title}
                 </Text>

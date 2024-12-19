@@ -2,9 +2,18 @@ import { COLORS } from "@/constants/constants";
 import React from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 
-export function AvatarArtists({ image, title, fileType, artist }: any) {
+interface AvatarArtists {
+  image: any
+  title: string
+  artist?: string
+  fileType?: string
+  onPress?: any
+}
+
+export function AvatarArtists({ image, title, fileType, artist, onPress }: AvatarArtists) {
   return (
     <TouchableOpacity
+      onPress={onPress}
       style={{
         flexDirection: "row",
         alignItems: "center",
@@ -18,7 +27,7 @@ export function AvatarArtists({ image, title, fileType, artist }: any) {
         }}
         source={image ? { uri: image } : require("../../assets/images/icon.png")}
       />
-      <View style={{ marginLeft: 12 }}>
+      <View style={{ marginLeft: 12, alignItems: 'center'}}>
         <Text
           style={{
             color: "white",
